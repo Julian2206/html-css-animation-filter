@@ -1,0 +1,136 @@
+/* box-1-red-when-hover*/
+
+.ex-1-square {
+  /* timer */
+  transition: 5s;
+}
+
+.ex-1-square:hover {
+  background: red;
+}
+
+/* box-2-enlager-red-color */
+
+.ex-2-square {
+  transition: 30s;
+}
+
+.ex-2-square:active {
+  /* originally box with 100px * 100px */
+  width: 100%;
+}
+
+/* box-3-radius-when-hover */
+
+.ex-3-square {
+  transition: 5s;
+}
+
+.ex-3-square:hover {
+  border-radius: 100px;
+}
+
+/* box-4-vanishing-style */
+
+.ex-4-square {
+  transition: 2s;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+/* box-5-hover-bigger-click-smaller  */
+
+.ex-5-square {
+  transition: 3s;
+}
+
+.ex-5-square:hover {
+  /* multiply size *2 */
+  transform: scale(2);
+}
+
+.ex-5-square:active {
+  /*  reduce side *2 */
+  transform: scale(0.5);
+}
+
+/* img 6 */
+
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+/* img 7 */
+
+.ex-7-img {
+  transition: 5s;
+}
+
+.ex-7-img:hover {
+  filter: grayscale(1);
+}
+
+/* img 8 */
+
+.ex-8-img {
+  transition: 3s;
+}
+
+.ex-8-img:hover {
+  filter: grayscale(1);
+  filter: sepia(1);
+  border-radius: 20px;
+}
+
+/* img 9 */
+
+.ex-9-img {
+  transition: 5s;
+}
+
+.ex-9-img:hover {
+  transform: scale(1.5);
+  filter: grayscale(1);
+  filter: sepia(1);
+  border-radius: 20px;
+}
+
+/* spinner */
+
+.ex-10-icon {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* keyframe use for animations (Specify from 0%---100% keyframe selector) */
+/* keyframe + name of the function */
+
+@keyframes spin {
+  0% {
+    transform: rotate(1turn);
+  }
+}
+
+.ex-11-icon:hover {
+  animation-name: spin2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0turn);
+  }
+
+  75% {
+    transform: rotate(320deg);
+  }
+
+  100% {
+    transform: rotate(0turn);
+  }
+}
